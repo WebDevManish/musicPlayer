@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Gilroy";
+  user-select: none;
+}
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #000;
+  border-radius: 100px;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: #000;
+}
+
+#container {
+  height: 80%;
+  width: 80%;
+  padding: 20px 2%;
+  background-color: #111;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+#left {
+  height: 100%;
+  width: 48%;
+  border-radius: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#right {
+  height: 100%;
+  width: 48%;
+  overflow-y: scroll;
+}
+#right #heading h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+#heading {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 70px;
+}
+main {
+  width: 100%;
+}
+main .song {
+  margin: 0 0 15px 0;
+  width: 100%;
+  height: 60px;
+  padding: 0 30px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+main .song:hover{
+  background-color: #222;
+}
+main .song .song-img img {
+  width: 48px;
+  border-radius: 10px;
+  pointer-events: none;
+}
+main .song .song-img {
+  pointer-events: none;
+}
+main .song .song-name {
+  width: 100%;
+  pointer-events: none;
+}
+main .song .song-name h3 {
+  width: 100%;
+  pointer-events: none;
+}
+main .song .song-duration {
+  pointer-events: none;
+}
+
+#player {
+  height: 100%;
+  width: 80px;
+  background-color: #222;
+  position: absolute;
+  bottom: 0;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+#player div {
+  font-size: 32px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
